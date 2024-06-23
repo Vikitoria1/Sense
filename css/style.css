@@ -231,17 +231,16 @@ body {
 }
 
 .highlight__inner {
-  display: flex;
-  justify-content: center;
+  padding-left: 39px;
+  padding-right: 39px;
   gap: 40px;
 }
 
 .highlight__list {
-/* display: flex;
-flex-wrap: wrap;
-gap: 20px; */
-display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  max-width: 1122px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  /* grid-template-columns: 396px 396px 686px; */
 }
 
 .highlight__item {
@@ -250,18 +249,25 @@ display: grid;
   box-shadow: 10px 10px 35px 0 rgba(46, 42, 57, 0.05);
 }
 
-.highlight__item-lit {
+.highlight__item-first {
   max-width: 396px;
 }
 
-.highlight__item-big {
-  max-width: 810px;
-  grid-column: span 2;
+.highlight__item-sec {
+max-width: 396px;
+
+}
+
+.highlight__item-last {
+  max-width: 686px;
 }
 
 .highlight__link img {
+  display: block;
   border-radius: 12px 12px 0 0;
   max-width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 
 .highlight__name {
@@ -276,7 +282,7 @@ display: grid;
   font-size: 16px;
   letter-spacing: 0.06em;
   text-align: center;
-  padding-bottom: 28px;
+  /* padding-bottom: 28px; */
 }
 
 .about {
@@ -406,7 +412,12 @@ display: grid;
 .footer__inner {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 0 331px;
+  justify-items: center;
+  margin-bottom: 136px;
+}
+
+.footer__menu {
+  max-width: 85px;
 }
 
 .footer__inner-title {
@@ -425,13 +436,45 @@ display: grid;
   color: rgba(46, 42, 57, 0.75);
 }
 
+.footer__store {
+  max-width: 250px;
+}
+
+.footer__store-item {
+  max-width: 221px;
+}
+
 .footer__store-text {
+  line-height: 33px;
   letter-spacing: 0.04em;
   color: rgba(46, 42, 57, 0.75);
+}
+
+.footer__store-text-big {
+  font-weight: 700;
+}
+
+.footer__promises {
+  max-width: 250px;
 }
 
 .footer__promises-text {
   line-height: 33px;
   letter-spacing: 0.04em;
   color: rgba(46, 42, 57, 0.75);
+}
+
+.footer__end {
+  border: 1px solid rgba(46, 42, 57, 0.08);
+  height: 0px;
+  margin-bottom: 56px;
+}
+
+.footer__end-text {
+  font-size: 10px;
+  line-height: 17px;
+  letter-spacing: 0.07em;
+  text-align: center;
+  color: rgba(46, 42, 57, 0.75);
+  padding-top: 24px;
 }

@@ -83,6 +83,15 @@ body {
   color: rgba(46, 42, 57, 0.75);
 }
 
+.menu__link {
+  transition: 0.5s;
+}
+
+.menu__link:hover {
+  transform: scale(1.1);
+  color: darksalmon;
+}
+
 .header__actions {
   display: flex;
   align-items: center;
@@ -107,12 +116,14 @@ body {
 }
 
 .top__img img {
+  display: block;
   max-width: 100%;
   height: auto;
   border-radius: 24px;
 }
 
 .top__inner {
+  display: block;
   max-width: 379px;
   border-radius: 24px;
   background: radial-gradient(
@@ -153,6 +164,11 @@ body {
   font-weight: 400;
   font-size: 14px;
   color: #edffa7;
+  transition: 1s;
+}
+
+.top__btn:hover {
+  transform: scale(1.2);
 }
 
 .formulas {
@@ -174,9 +190,18 @@ body {
 }
 
 .formulas__item {
-  border-radius: 0 0 12px 12px;
+  border-radius: 12px 12px 12px 12px;
   background: #fdfbf7;
   box-shadow: 10px 10px 35px 0 rgba(46, 42, 57, 0.05);
+}
+
+.formulas__link {
+  transition: 1s;
+}
+
+.formulas__link:hover {
+  transform: scale(1.1);
+  color: darksalmon;
 }
 
 .formulas__link img {
@@ -234,38 +259,41 @@ body {
   padding-left: 39px;
   padding-right: 39px;
   gap: 40px;
-}
-
-.highlight__list {
-  max-width: 1122px;
   display: grid;
-  grid-template-columns: 1fr 2fr;
-  /* grid-template-columns: 396px 396px 686px; */
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: repeat(2, 1fr);
 }
 
 .highlight__item {
-  border-radius: 0 0 12px 12px;
+  border-radius: 12px 12px 12px 12px;
   background: #fdfbf7;
   box-shadow: 10px 10px 35px 0 rgba(46, 42, 57, 0.05);
 }
 
 .highlight__item-first {
-  max-width: 396px;
+  max-width: 686px;
+  grid-row: 1 / -1;
 }
 
 .highlight__item-sec {
-max-width: 396px;
-
+  max-width: 396px;
 }
 
 .highlight__item-last {
-  max-width: 686px;
+  max-width: 396px;
+}
+
+.highlight__link {
+  transition: 1s;
+}
+
+.highlight__link:hover {
+  transform: scale(1.1);
+  color: darksalmon;
 }
 
 .highlight__link img {
   display: block;
-  border-radius: 12px 12px 0 0;
-  max-width: 100%;
   height: auto;
   object-fit: cover;
 }
@@ -282,7 +310,7 @@ max-width: 396px;
   font-size: 16px;
   letter-spacing: 0.06em;
   text-align: center;
-  /* padding-bottom: 28px; */
+  padding-bottom: 28px;
 }
 
 .about {
@@ -328,7 +356,7 @@ max-width: 396px;
 }
 
 .catalog__item {
-  border-radius: 0 0 12px 12px;
+  border-radius: 12px 12px 12px 12px;
   background: #fdfbf7;
   max-width: 347px;
   box-shadow: 10px 10px 35px 0 rgba(46, 42, 57, 0.05);
@@ -342,11 +370,11 @@ max-width: 396px;
   font-size: 22px;
   letter-spacing: 0.04em;
   text-align: center;
+  transition: 1s;
 }
 
 .catalog__link:hover {
   transform: scale(1.1);
-  transition: 1s;
   color: darksalmon;
 }
 

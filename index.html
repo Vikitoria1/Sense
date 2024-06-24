@@ -16,57 +16,59 @@
   <body>
     <header class="header">
       <div class="container">
-        <div class="header__inner">
-          <a class="logo" href="index.html">SENSE</a>
-          <nav class="menu">
-            <ul class="menu-list">
-              <li class="menu__item">
-                <a class="menu__link" href="#">Skin Care</a>
-              </li>
-              <li class="menu__item">
-                <a class="menu__link" href="#">Hair Care</a>
-              </li>
-              <li class="menu__item">
-                <a class="menu__link" href="#">Body Care</a>
-              </li>
-              <li class="menu__item">
-                <a class="menu__link" href="#">Nail Polish</a>
-              </li>
-              <li class="menu__item">
-                <a class="menu__link" href="#">Blog</a>
-              </li>
-              <li class="menu__item">
-                <a class="menu__link" href="#">About Us</a>
-              </li>
-            </ul>
-          </nav>
-          <ul class="header__actions">
-            <li class="header__actions-item">
-              <a class="header__actions-link" href="#">
-                <img src="images/search.svg" alt="search" />
-              </a>
+        <nav class="nav">
+          <button class="menu__btn" type="button">
+            <span class="btn__line"></span>
+            <span class="btn__line"></span>
+            <span class="btn__line"></span>
+            <span class="btn__line"></span>
+          </button>
+          <a class="logo" href="index.html">
+            <img src="images/logo.png" alt="logo" />
+          </a>
+          <ul class="menu">
+            <li class="menu__item">
+              <a class="menu__link" href="#">Skin Care</a>
             </li>
-            <li class="header__actions-item">
-              <a class="header__actions-link" href="#">
-                <img src="images/cart.svg" alt="cart" />
-              </a>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Hair Care</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Body Care</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Nail Polish</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Blog</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">About Us</a>
             </li>
           </ul>
-        </div>
+          <div class="header__actions">
+            <a class="header__actions-link" href="#">
+              <img src="images/search.svg" alt="search" />
+            </a>
+            <a class="header__actions-link" href="#">
+              <img src="images/cart.svg" alt="cart" />
+            </a>
+          </div>
+        </nav>
       </div>
     </header>
     <section class="top">
       <div class="container">
         <div class="top__item">
-          <div class="top__img">
-            <img src="images/top-img.png" alt="photo" />
-          </div>
           <div class="top__inner">
             <h1 class="top__title">Glowing skin, naturally</h1>
             <p class="top__text">
               Indulge in plant-based skin care for naturally radiant results.
             </p>
             <button class="top__btn">Shop now</button>
+          </div>
+          <div class="top__img">
+            <img src="images/top-img.png" alt="photo" />
           </div>
         </div>
       </div>
@@ -261,5 +263,6 @@
         </div>
       </div>
     </footer>
+    <script src="js/main.js"></script>
   </body>
 </html>
